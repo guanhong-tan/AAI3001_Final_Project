@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Classifier - Upload</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --text-color: #2c3e50;
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('/static/images/nature.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .upload-area {
+            border: 2px dashed var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            background-color: rgba(46, 204, 113, 0.05);
+        }
+
+        .upload-area i {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .submit-btn,
+        .home-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: none;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover,
+        .home-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .home-btn {
+            display: inline-block; /* Ensure the home button is always visible */
+        }
+
+        .uploaded-image {
+            display: block;
+            margin: 15px auto; /* Centers the image horizontally */
+            max-width: 80%; /* You can adjust this value */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .selected-file-name {
+            margin-top: 10px;
+            color: #666;
+            display: block;
+        }
+    </style>
+    <script>
+        function handleFileSelection(event) {
+            const submitButton = document.getElementById('submit-btn');
+            const imagePreview = document.getElementById('image-preview');
+            const fileName = document.getElementById('file-name');
+            
+            // Show submit button
+            submitButton.style.display = 'inline-block';
+
+            // Show selected file name
+            if (event.target.files.length > 0) {
+                const file = event.target.files[0];
+                fileName.textContent = `Selected file: ${file.name}`;
+                fileName.style.display = 'block';
+                
+                // Create an image URL and show it
+                const fileURL = URL.createObjectURL(file);
+                imagePreview.src = fileURL;
+                imagePreview.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image</h1>
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <div class="upload-area" onclick="document.getElementById('file').click()">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag and drop an image here, or click to select a file</p>
+                <input type="file" id="file" name="file" class="file-input" accept="image/*" required onchange="handleFileSelection(event)">
+            </div>
+            <p class="selected-file-name" id="file-name"></p>
+
+            <!-- Image preview will be shown here after selection -->
+            <img id="image-preview" class="uploaded-image" style="display: none;" alt="Image Preview">
+
+            <button type="submit" class="submit-btn" id="submit-btn">Analyze Material</button>
+        </form>
+        <a href="/"><button class="home-btn">Back to Home</button></a>
+    </div>
+</body>
+</html>

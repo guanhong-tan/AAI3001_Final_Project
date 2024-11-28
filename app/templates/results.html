@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recycling Classifier - Results</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #2ecc71;
+        --secondary-color: #27ae60;
+        --text-color: #2c3e50;
+        --border-radius: 12px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: url("/static/images/nature.jpg") no-repeat center center
+          fixed;
+        background-size: cover;
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 40px;
+        background: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Semi-transparent white background */
+        border-radius: var(--border-radius);
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .result-item {
+        margin: 20px 0;
+        padding: 15px;
+        background: rgba(46, 204, 113, 0.1); /* Light green background */
+        border-radius: var(--border-radius);
+        text-align: left;
+      }
+
+      .result-item i {
+        margin-right: 10px;
+        color: var(--primary-color);
+      }
+
+      .error {
+        color: #e74c3c;
+        background-color: rgba(231, 76, 60, 0.1); /* Light red background */
+        padding: 15px;
+        border-radius: var(--border-radius);
+      }
+
+      .submit-btn {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: var(--border-radius);
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+      }
+
+      .submit-btn:hover {
+        background-color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      {% if error %}
+      <div class="error">
+        <i class="fas fa-exclamation-circle"></i> Error: {{ error }}
+      </div>
+      <a href="{{ url_for('upload') }}">
+        <button class="submit-btn">Try Again</button>
+      </a>
+      {% else %}
+      <h1>Analysis Results</h1>
+      <div class="result-item">
+        <i class="fas fa-box"></i> <strong>Material Type:</strong> {{
+        material_type }}
+      </div>
+      <div class="result-item">
+        <i class="fas fa-percentage"></i> <strong>Confidence:</strong> {{
+        (confidence * 100) | round(2) }}%
+      </div>
+      <div class="result-item">
+        <i class="fas fa-check-circle"></i> <strong>Recyclable:</strong> {{
+        'Yes' if is_recyclable else 'No' }}
+      </div>
+      <div class="result-item">
+        <i class="fas fa-trash"></i> <strong>Bin Color:</strong> {{ bin_color }}
+      </div>
+      <a href="{{ url_for('home') }}">
+        <button class="submit-btn">Back to Home</button>
+      </a>
+      {% endif %}
+    </div>
+  </body>
+</html>
