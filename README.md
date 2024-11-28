@@ -13,4 +13,4 @@ Material Detection and Classification: Identifies recyclable materials such as g
 
 Stakeholder Focus: Designed to assist public waste collectors, recycling companies, households, government agencies, and educational institutions.
 
-Scalable Solution: Initially targets small items with potential to expand for larger items.
+Scalable Solution: Initially targets small items with potential to expand for larger items (Item name, is contanimated etc).
