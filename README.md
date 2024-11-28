@@ -5,7 +5,7 @@
 3. Mollah Faizul Islam Fahim [2302684]
 
 # Overview
-This project, developed as part of the AAI3001 module, focuses on detecting and classifying recyclable materials using machine learning techniques. The goal is to create a web and mobile-friendly scanning interface that identifies various types of recyclable materials, contributing to sustainability and environmental awareness.
+This project, developed as part of the our module, focuses on detecting and classifying recyclable materials using machine learning techniques. The goal is to create a web and mobile-friendly scanning interface that identifies various types of recyclable materials, contributing to sustainability and environmental awareness.
 
 # Key Features
 
