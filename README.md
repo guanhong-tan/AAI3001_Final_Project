@@ -9,8 +9,8 @@ This project, developed as part of the AAI3001 module, focuses on detecting and 
 
 # Key Features
 
-# Material Detection and Classification: Identifies recyclable materials such as glass, paper, cloths, metal and plastic.
+Material Detection and Classification: Identifies recyclable materials such as glass, paper, cloths, metal and plastic.
 
-# Stakeholder Focus: Designed to assist public waste collectors, recycling companies, households, government agencies, and educational institutions.
+Stakeholder Focus: Designed to assist public waste collectors, recycling companies, households, government agencies, and educational institutions.
 
-# Scalable Solution: Initially targets small items with potential to expand for larger items.
+Scalable Solution: Initially targets small items with potential to expand for larger items.
