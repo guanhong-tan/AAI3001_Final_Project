@@ -1,0 +1,89 @@
+item_id,item_name,material_type,recyclability_status,bin_colour,preparation_instructions
+1,receipt,paper,recyclable,blue,Ensure the receipt is free from any adhesive or plastic elements before recycling.
+2,cardboard,paper,recyclable,blue,Flatten the cardboard to save space in the bin.
+3,snacks outer packaging,paper,recyclable,blue,"Remove any plastic or foil linings; only clean, dry paper can be recycled."
+4,egg tray,paper,recyclable,blue,Ensure the egg tray is clean and free of any residue.
+5,tissue box packaging,paper,recyclable,blue,Remove any plastic film from the opening and flatten the box.
+6,flyer,paper,recyclable,blue,Remove any plastic film from the opening and flatten the box.
+7,envelope,paper,recyclable,blue,"Remove plastic windows, if any, before recycling."
+8,toliet paper roll,paper,recyclable,blue,Flatten the roll to save space in the recycling bin.
+9,paper towel roll,paper,recyclable,blue,"Ensure the roll is clean, and flatten to save space."
+10,newspaper,paper,recyclable,blue,Place directly in the bin if it is clean and dry.
+11,magazine,paper,recyclable/reusable,blue,"Remove any plastic wrap; reuse if possible, or recycle if free of adhesive or lamination."
+12,book,paper,recyclable/reusable,blue,Remove any plastic covers or bindings; consider donating if in good condition.
+13,paper towel ,paper,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+14,tissue ,paper,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+15,disposable food packaging,paper,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+16,disposable drink packaging ,paper,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+17,glitter paper,paper,non-recyclable,green,Not practical to recycle as it is very difficult to seperate the non-paper layer.
+18,crayon drawing,paper,non-recyclable,green,Not practical to recycle as it is very difficult to seperate the non-paper layer.
+19,plant,organic/biodegradable,non-recyclable,green,"Remove any plastic pots, wires, or non-organic materials attached to the plant. Place small plant trimmings, leaves, and flowers in the compost or designated green waste bin if available. For general waste disposal, ensure the plant is free of soil to avoid adding unnecessary weight to the bin."
+20,diaper,paper,non-recyclable,green,Wrap the used diaper in a plastic bag or diaper disposal bag to contain any odors and potential leakage. Place it in the general waste bin (green bin) as diapers cannot be recycled and may contain contaminants that affect recyclables.
+21,wooden chopstick,wood,non-recyclable,green," Ensure the chopsticks are clean and free from food residue. If composting facilities accept small wood items, place them in the compost or organic waste bin. Otherwise, dispose of them in the general waste bin."
+22,wooden plank,wood,non-recyclable,green,"If the plank is untreated, it may be accepted by some compost or green waste facilities. Remove any nails, screws, or attachments if possible. If the plank is treated, painted, or contains adhesives, place it in the general waste bin or take it to a designated waste disposal facility for bulky or construction waste."
+23,beverage bottle,plastic,recyclable,blue ,Rinse the bottle and remove the cap before placing it in the recycling bin.
+24,shampoo bottle,plastic,recyclable,blue ,"Rinse thoroughly to remove any residue, and place in the recycling bin."
+25,detergent bottle,plastic,recyclable,blue ,Ensure the bottle is empty and rinse out any remaining detergent before recycling.
+26,ziplock bag,plastic,recyclable,blue ,Ensure the bag is clean and free of food residue before recycling.
+27,plastic bag,plastic,recyclable,blue ,Flatten and collect multiple bags together to avoid clogging the recycling machine.
+28,bubble wrap,plastic,recyclable,blue ,Fold or flatten to save space; check if local facilities accept bubble wrap for recycling.
+29,egg tray,plastic,recyclable,blue ,Clean any residue from the tray before placing it in the recycling bin.
+30,fruit box,plastic,recyclable,blue ,Remove any food residues and rinse if necessary before recycling.
+31,film packaging,plastic,recyclable,blue ,Ensure it’s clean and free from contaminants; check if it’s accepted in local recycling.
+32,tupperware,plastic,recyclable/reusable,blue ,"These can be recycled (If Clean) but if they are too dirty/greasy, discard them instead"
+33,takeout containers,plastic,recyclable/reusable,blue ,"These can be recycled (If Clean) but if they are too dirty/greasy, discard them instead"
+34,packaging with foil,plastic,non-recyclable,green,"Non-recyclable, place in the general waste bin"
+35,melamine product,plastic,non-recyclable,green,"Non-recyclable, dispose of in the general waste bin."
+36,plastic packaging contaminated with food,plastic,non-recyclable,green,"Non-recyclable, remove any food and dispose in the general waste bin."
+37,toys,plastic,non-recyclable,green,"Non-recyclable, consider donation if in good condition, otherwise dispose in general waste."
+38,styrofoam food containers,plastic,non-recyclable,green,"Clean or dirty, do not recycle any!"
+39,cooler box,plastic,non-recyclable,green,"Clean or dirty, do not recycle any!"
+40,packing peanut,plastic,non-recyclable,green,"Clean or dirty, do not recycle any!"
+41,liquor bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+42,drink bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+43,perfume bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+44,cosmetic bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+45,medicine bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+46,food jar,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+47,sauce bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+48,sauce jar,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+49,condiment bottle,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+50,condiment jar,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+51,wine glass,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+52,drinking glass,glass,recyclable,blue ,"If disposed of properly , glass can be continuously recycled! Ensure that they are rinsed and free of contamination"
+53,oven-safe container,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+54,tempered glass,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+55,pyrex glassware,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+56,mirror,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+57,crystal glass,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+58,glass with metal wires,glass,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+59,porcelain,ceramic,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+60,ceramic bowl,ceramic,non-recyclable,green,"These items are often used and unclean, and not selected for recycling."
+61,spectacles,metal/plastic/glass,special disposal ,dark blue and white,Place in an e-waste bin for specialized recycling due to mixed materials.
+62,light bulb,electronic waste,special disposal ,dark blue and white,Place in an e-waste bin; do not place in regular recycling due to hazardous materials.
+63,beverage can,metal,recyclable,blue ,Rinse and place in the recycling bin.
+64,biscuit tin,metal ,recyclable,blue ,Clean any food residue and place in the recycling bin.
+65,metal container,metal,recyclable,blue ,Rinse to remove any residue and recycle.
+66,food can,metal,recyclable,blue ,"Ensure it’s clean, and remove the lid; place both in the recycling bin."
+67,paint can,metal,recyclable,blue ,Ensure that there is no liquid paint left
+68,old medal,metal,recyclable,blue ,Remove Ribbon
+69,metal cutlery,metal,recyclable,blue ,"Place directly in the recycling bin if clean; otherwise, wash before recycling."
+70,steel wool,metal,recyclable,blue , Ensure the steel wool is clean and free from any food or chemical residue before placing it in the recycling bin. Steel wool that is contaminated should be disposed of in general waste to avoid contaminating other recyclables.
+71,metal accessory,metal,recyclable,blue ,While these items can be recycle they are small and difficult to pick up during the recycling process
+72,rusty metal can,metal ,non-recyclable,green,"A small amount of rust is ok, but dispose them as waste if they are full of rust."
+73,dirty aluminium ,metal,non-recyclable,green,"While aluminium can be recycled, they are often contaminated with food stains"
+74,dirty foil,metal,non-recyclable,green,"While aluminium can be recycled, they are often contaminated with food stains"
+75,dirty tray,metal,non-recyclable,green,"While aluminium can be recycled, they are often contaminated with food stains"
+76,laptop,others,special disposal ,dark blue and white,"Do not place them in the blue bins! Cables and laptops can be placed in e-waste bins. Recycle at specific e-waste collection points, visit https://www.nea.gov.sg/our-services/waste-management/3r-programmes-and-resources/e-waste-management/where-to-recycle-e-waste , for more information"
+77,battery,others,special disposal ,dark blue and white,Place in an e-waste bin for proper disposal.
+78,large household appliance,others,special disposal ,dark blue and white,Arrange for collection or bring to an e-waste facility. Do not place in standard bins.
+79,electric mobility device,others,special disposal ,dark blue and white,Take to a designated e-waste collection point due to battery and electronic components.
+80,printer,others,special disposal ,dark blue and white,Bring to an e-waste collection point; remove ink cartridges if possible.
+81,phone,others,special disposal ,dark blue and white,Place in an e-waste bin; consider factory reset for privacy before disposal.
+82,hot ashes,others,non-recyclable,green,"Allow ashes to cool completely before disposing of them. Once cooled, place them in a sealed bag and dispose of them in the general waste bin (green bin). Do not place hot ashes in any bin, as they can pose a fire hazard."
+83,lit cigarettes,others,non-recyclable,green,"Ensure the cigarette is completely extinguished before disposal. Once cooled, place it in the general waste bin. Cigarettes contain toxins and should not be mixed with recyclables."
+84,power bank,others,special disposal ,dark blue and white,Place in an e-waste bin due to battery components.
+85,unemptied spray,others,non-recyclable,green,Unemptied spray can that is not fully emptied can be hazardous due to their pressurized contents. Take them to a designated hazardous waste disposal facility or check if a local e-waste or hazardous waste collection point accepts them. Do not puncture or crush aerosol cans.
+86,aerosol can,others,non-recyclable,green,Aerosol can that is not fully emptied can be hazardous due to their pressurized contents. Take them to a designated hazardous waste disposal facility or check if a local e-waste or hazardous waste collection point accepts them. Do not puncture or crush aerosol cans.
+87,shoes,others,non-recyclable/reusable,green,"If in good condition, consider donating; otherwise, place in general waste."
+88,clothes,others,non-recyclable/reusable,green,"If in usable condition, donate; otherwise, place in a textile recycling bin if available, or in general waste if not."

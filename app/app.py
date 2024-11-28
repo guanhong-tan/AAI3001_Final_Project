@@ -30,6 +30,14 @@ except Exception as e:
 
 CATEGORIES = ['Glass', 'Cloth', 'Plastic', 'Paper', 'Metal']
 
+BIN_COLORS = {
+    'Glass': 'Green',
+    'Cloth': 'Green',
+    'Plastic': 'Blue',
+    'Paper': 'Blue',
+    'Metal': 'Dark Blue & White'
+}
+
 def preprocess_image(image_path):
     try:
         img = cv2.imread(image_path)
@@ -80,15 +88,20 @@ def results():
         prediction = model.predict(image, verbose=0)
         category = CATEGORIES[np.argmax(prediction)]
         
+        # Get the corresponding bin color
+        bin_color = BIN_COLORS.get(category, 'Unknown')  # Fallback to 'Unknown' if category is missing
+
         # Remove the file after processing
         os.remove(file_path)
         
         # Send result to template
-        return render_template('results.html', 
-                               material_type=category, 
-                               confidence=float(np.max(prediction)),
-                               is_recyclable=True,
-                               bin_color='Blue')
+        return render_template(
+            'results.html', 
+            material_type=category, 
+            confidence=float(np.max(prediction)),
+            is_recyclable=True,
+            bin_color=bin_color
+        )
     except Exception as e:
         return render_template('results.html', error=str(e))
 
