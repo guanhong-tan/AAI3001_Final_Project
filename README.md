@@ -11,6 +11,6 @@ This project, developed as part of the our module, focuses on detecting and clas
 
 Material Detection and Classification: Identifies recyclable materials such as glass, paper, cloths, metal and plastic.
 
-Stakeholder Focus: Designed to assist public waste collectors, recycling companies, households, government agencies, and educational institutions.
+Stakeholder Focus: Designed to assist public waste collectors, recycling companies, households, government agencies (NEA) and educational institutions.
 
 Scalable Solution: Initially targets small items with potential to expand for larger items (Item name, is contanimated etc).
